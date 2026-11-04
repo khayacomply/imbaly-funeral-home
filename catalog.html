@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalog — Eternal Stone Memorials</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">Eternal Stone</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="catalog.html" class="active">Catalog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="section-eyebrow light">Our Collection</p>
+      <h1>Memorial Catalog</h1>
+      <p>Browse our range of handcrafted monuments. Every piece can be fully customized.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="catalog-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="granite">Granite</button>
+        <button class="filter-btn" data-filter="marble">Marble</button>
+        <button class="filter-btn" data-filter="bronze">Bronze</button>
+        <button class="filter-btn" data-filter="custom">Custom</button>
+      </div>
+
+      <div class="catalog-grid" id="catalogGrid">
+        <!-- Catalog items injected via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Don't See Exactly What You Want?</h2>
+      <p>We specialize in fully custom designs. Let's create something unique together.</p>
+      <a href="contact.html" class="btn btn-primary">Request Custom Design</a>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="" />
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <p class="modal-category" id="modalCategory"></p>
+          <p id="modalDescription"></p>
+          <p class="modal-price" id="modalPrice"></p>
+          <a href="contact.html" class="btn btn-primary">Inquire About This Piece</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Eternal Stone</h4>
+        <p>Handcrafted memorials honoring lives with dignity and permanence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>123 Stone Avenue</li>
+          <li>Springfield, USA</li>
+          <li>(555) 123-4567</li>
+          <li>info@eternalstone.com</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon – Fri: 9am – 6pm</li>
+          <li>Saturday: 10am – 4pm</li>
+          <li>Sunday: By appointment</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Eternal Stone Memorials. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

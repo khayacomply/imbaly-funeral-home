@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Eternal Stone Memorials</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">Eternal Stone</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="section-eyebrow light">Get in Touch</p>
+      <h1>Contact Us</h1>
+      <p>We're here to help you through every step of the process.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Visit Our Showroom</h2>
+        <div class="info-item">
+          <h4>Address</h4>
+          <p>123 Stone Avenue<br />Springfield, USA 12345</p>
+        </div>
+        <div class="info-item">
+          <h4>Phone</h4>
+          <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+        </div>
+        <div class="info-item">
+          <h4>Email</h4>
+          <p><a href="mailto:info@eternalstone.com">info@eternalstone.com</a></p>
+        </div>
+        <div class="info-item">
+          <h4>Business Hours</h4>
+          <p>Monday – Friday: 9:00 AM – 6:00 PM<br />
+             Saturday: 10:00 AM – 4:00 PM<br />
+             Sunday: By appointment only</p>
+        </div>
+        <div class="map-placeholder">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-73.99%2C40.73%2C-73.97%2C40.75&layer=mapnik"
+            loading="lazy"
+            title="Map">
+          </iframe>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h2>Send Us a Message</h2>
+        <p class="form-intro">We typically respond within 24 hours. All consultations are free and confidential.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service of Interest</label>
+          <select id="service" name="service">
+            <option value="">Please select...</option>
+            <option value="headstone">Custom Headstone</option>
+            <option value="monument">Family Monument</option>
+            <option value="engraving">Engraving / Restoration</option>
+            <option value="custom">Fully Custom Design</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message *</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-success" id="formSuccess" style="display:none;">
+          ✓ Thank you. Your message has been received. We'll be in touch shortly.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Eternal Stone</h4>
+        <p>Handcrafted memorials honoring lives with dignity and permanence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>123 Stone Avenue</li>
+          <li>Springfield, USA</li>
+          <li>(555) 123-4567</li>
+          <li>info@eternalstone.com</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon – Fri: 9am – 6pm</li>
+          <li>Saturday: 10am – 4pm</li>
+          <li>Sunday: By appointment</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Eternal Stone Memorials. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
