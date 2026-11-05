@@ -633,6 +633,104 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 0.85rem;
 }
 
+/* ===== EMPTY IMAGE PLACEHOLDER ===== */
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: 2px dashed var(--color-gold);
+}
+
+/* ===== FLOATING WHATSAPP BUTTON ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== WHATSAPP CONTACT CARD ===== */
+.whatsapp-contact-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-cta-box {
+  background: var(--color-cream);
+  border: 2px solid var(--color-gold);
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.whatsapp-icon-large {
+  margin-bottom: 1.5rem;
+}
+
+.whatsapp-cta-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+.whatsapp-cta-box p {
+  color: var(--color-slate);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: #25d366;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  color: #fff;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .about-grid, .about-story, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -668,4 +766,11 @@ img { max-width: 100%; height: auto; display: block; }
   .section { padding: 3.5rem 0; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
+  
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
 }
